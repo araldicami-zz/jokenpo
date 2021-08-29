@@ -1,0 +1,72 @@
+.board {
+  background-color: #fff;
+
+  width: 500px;
+
+  font-family: "Roboto", sans-serif;
+  padding: 2rem 4rem 4rem;
+  border-radius: 1.5rem;
+
+  color: #0351bd;
+  text-align: center;
+
+  h1 {
+    font-family: "MuseoModerno", cursive;
+  }
+
+  .board-options {
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 1.5rem;
+
+      font-size: 1.8rem;
+
+      border: none;
+      background-color: transparent;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #edf4ff;
+      }
+    }
+  }
+}
+
+.board-button-commands {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 1rem;
+
+  button {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    min-width: 150px;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 4rem;
+    background-color: #0351bd;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+
+    &.button-reset {
+      background-color: transparent;
+      color: #0351bd;
+      border: 2px solid #0351bd;
+    }
+
+    & + button {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
