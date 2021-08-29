@@ -6,15 +6,17 @@ export function Scoreboard({
   robotOption,
   personScore,
   robotScore,
+  name,
+  avatar,
 }) {
   const options = { pedra: "✊", papel: "🤚", tesoura: "✌" };
 
   return (
     <div className="scoreboard">
       <ScoreboardCharacter
-        name="Você"
+        name={name ? name : "Você"}
         score={personScore}
-        icon={personOption ? options[personOption] : "👩"}
+        icon={personOption ? options[personOption] : avatar}
       />
       <ScoreboardCharacter
         name="Computador"

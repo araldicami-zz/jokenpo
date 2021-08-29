@@ -1,0 +1,76 @@
+.choose-avatar {
+  min-width: 400px;
+
+  text-align: center;
+
+  h4 {
+    color: #0351bd;
+    font-family: "MuseoModerno", cursive;
+  }
+
+  .choose-avatar-input {
+    border: 2px solid #c4c4c4;
+    border-radius: 4rem;
+    padding: 0.7rem 1rem;
+    display: block;
+    outline: none;
+
+    margin: 0.8rem auto;
+  }
+
+  .choose-avatar-button {
+    height: 70px;
+
+    width: 70px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #edf4ff;
+    }
+  }
+
+  .play {
+    display: block;
+
+    margin: auto;
+
+    font-weight: bold;
+    border: 2px solid #0351bd;
+    background-color: #0351bd;
+    color: #fff;
+
+    padding: 0.7rem 1rem;
+    border-radius: 5rem;
+    min-width: 150px;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .emoji-mart-search,
+  .emoji-mart-category-label {
+    display: none;
+  }
+
+  .choose-avatar-picker {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .emoji-mart {
+      position: absolute;
+    }
+  }
+}

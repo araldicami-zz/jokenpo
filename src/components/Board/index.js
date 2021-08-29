@@ -3,7 +3,7 @@ import "./styles.scss";
 import { useState } from "react";
 import { Scoreboard } from "../Scoreboard";
 
-export function Board() {
+export function Board({ name, avatar }) {
   const options = ["pedra", "papel", "tesoura"];
 
   const [firstPlayerOption, setFirstPlayerOption] = useState("");
@@ -72,6 +72,8 @@ export function Board() {
           robotOption={robotOption}
           personScore={firstPlayerScore}
           robotScore={robotScore}
+          name={name}
+          avatar={avatar}
         />
       </div>
       <div className="board-button-commands">
